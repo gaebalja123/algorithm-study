@@ -9,8 +9,8 @@ class Solution {
         int tm = result[0];
         int ts = result[1];
         
-        int max = max(tm, ts);
-        int min = min(tm, ts);
+        int max = Math.max(tm, ts);
+        int min = Math.min(tm, ts);
         
         int gcd = gcd(max, min);
         
@@ -30,26 +30,6 @@ class Solution {
         
         int[] result = {tm, ts};
         return result;
-    }
-    
-    public static int min(int a, int b) {
-        int min = 0;
-
-        if (a <=  b) {
-            return min = a;
-        }else{
-            return min = b;
-        }
-    }
-
-    public static int max(int a, int b) {
-        int max = 0;
-
-        if (a <=  b) {
-            return max = b;
-        }else {
-            return max = a;
-        }
     }
     
         public static int gcd(int a, int b) {
